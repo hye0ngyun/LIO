@@ -15,6 +15,7 @@
         padding: 0;
         margin: 0;
       }
+      /* header block */
       .header {
         display: flex;
         /* justify-content: space-around; */
@@ -23,10 +24,10 @@
         height: 80px;
         padding: 0 100px;
       }
-      .logo {
-        width: 100px;
+      .header__logo {
+        /* width: 100px;
         height: 70px;
-        background-color: black;
+        background-color: black; */
         margin-right: auto;
       }
       /* nav block */
@@ -63,12 +64,93 @@
         color: #9b9b9b;
         border-radius: 15px;
       }
+
+      /* banner block */
+      .banner {
+        height: 550px;
+        padding: 0 100px;
+        margin-top: 2px;
+        background-color: #7f99e2;
+      }
+      /* banner-ly1 block*/
+      .banner-ly1 {
+        background-color: white;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      /* banner-ly2 block*/
+      .banner-ly2 {
+        display: grid;
+        width: 550px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        align-items: center;
+        grid-template-areas:
+          "img content content"
+          "header header header"
+          ". link .";
+      }
+      /* banner-ly2 element*/
+      .banner-ly2__img {
+        grid-area: img;
+      }
+      .banner-ly2__content {
+        grid-area: content;
+        font-size: 14px;
+        margin: 0;
+      }
+      .banner-ly2__content__blue {
+        color: #195090;
+      }
+      .banner-ly2__content_bold {
+        font-weight: bold;
+      }
+      .banner-ly2__header {
+        grid-area: header;
+        font-size: 3em;
+        letter-spacing: 28px;
+        margin: 0;
+        font-weight: 500;
+      }
+      .banner-ly2__link {
+        grid-area: link;
+        box-sizing: border-box;
+        width: 200px;
+        height: 50px;
+        background-color: #195090;
+        color: white;
+        border: 0;
+        border-radius: 50px;
+        font-size: 1.1em;
+        box-shadow: 0px 2px 3px 0px #30303055;
+        cursor: pointer;
+        text-align: center;
+        line-height: 50px;
+      }
+
+      /* nl modifier */
+      .nl_block {
+        display: block;
+      }
+      /* footer block */
+      .footer {
+        background-color: #195090;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .footer__content {
+        color: white;
+      }
     </style>
   </head>
   <body>
     <!-- header -->
     <header class="header">
-      <img src="" alt="" class="logo" />
+      <img src="./img/LIO_Link_In_One.svg" alt="" class="header__logo" />
       <ul class="nav">
         <li class="nav__item"><a href="" class="nav__link">서비스소개</a></li>
         <li class="nav__item"><a href="" class="nav__link">스터디</a></li>
@@ -81,7 +163,29 @@
       </ul>
     </header>
     <!-- banner -->
-    <div class="banner"></div>
+    <div class="banner">
+      <div class="banner-ly1">
+        <div class="banner-ly2">
+          <img src="./img/LIO_banner.svg" alt="" class="banner-ly2__img" />
+          <p class="banner-ly2__content">
+            리오는 <span class="banner-ly2__content__blue">공동의 목표</span>를
+            갖는 사람들을
+            <span class="banner-ly2__content__blue">이어주는 플랫폼</span
+            >입니다.
+            <span class="nl_block"
+              >스터디, 프로젝트를
+              <span Wclass="banner-ly2__content__blue">함께 할 사람</span>들
+              찾는다면,</span
+            >
+            <span class="banner-ly2__content__blue banner-ly2__content_bold"
+              >리오</span
+            >에서 찾아보세요.
+          </p>
+          <h1 class="banner-ly2__header">하나로 연결하다</h1>
+          <a class="banner-ly2__link">서비스 소개</a>
+        </div>
+      </div>
+    </div>
     <!-- body -->
     <main>
       <div class="grid">
@@ -89,6 +193,10 @@
         <div class="grid-item"></div>
       </div>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <span class="footer__content"
+        >2021 © link in one. All rights reserved.</span
+      >
+    </footer>
   </body>
 </html>
