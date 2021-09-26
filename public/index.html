@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Link In One</title>
+    <link rel="stylesheet" href="./css/reset.css" />
     <style>
       @font-face {
         font-family: noto-sans;
@@ -14,6 +15,7 @@
         font-family: noto-sans;
         padding: 0;
         margin: 0;
+        max-width: 1920px;
       }
       /* header block */
       .header {
@@ -71,6 +73,7 @@
         padding: 0 100px;
         margin-top: 2px;
         background-color: #7f99e2;
+        box-shadow: 1px 1px 5px #50505033;
       }
       /* banner-ly1 block*/
       .banner-ly1 {
@@ -128,6 +131,7 @@
         cursor: pointer;
         text-align: center;
         line-height: 50px;
+        align-self: flex-end;
       }
 
       /* nl modifier */
@@ -145,6 +149,22 @@
       .footer__content {
         color: white;
       }
+
+      /* main block */
+      .main {
+        padding: 100px 0;
+      }
+
+      /* card block */
+      /* card element */
+      /* .card__item {
+        box-sizing: border-box;
+        width: 400px;
+        height: 220px;
+        border-radius: 20px;
+        box-shadow: 2px 2px 5px #50505033;
+        padding: 25px;
+      } */
     </style>
   </head>
   <body>
@@ -186,11 +206,151 @@
         </div>
       </div>
     </div>
-    <!-- body -->
-    <main>
-      <div class="grid">
-        <!-- 서버로부터 데이터 받아와서 최신 15개 글 반복하기 -->
-        <div class="grid-item"></div>
+    <style>
+      .bulletien-group {
+        padding: 0 100px;
+      }
+      .card-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 35px;
+        flex-shrink: 0;
+      }
+      .card {
+        cursor: pointer;
+        box-sizing: border-box;
+        flex-basis: 400px;
+        height: 220px;
+        border-radius: 20px;
+        box-shadow: 2px 2px 5px #50505033;
+        padding: 25px;
+        transition: 1s;
+      }
+      .card:hover {
+        background-color: #195090;
+      }
+      .card:hover .card__rank,
+      .card:hover .card__head,
+      .card:hover .bulletien-info__item {
+        color: #ffffff;
+      }
+      .card:hover .tag-group {
+        background-color: #ffffff;
+        color: #195090;
+      }
+      .card:hover .card__rank {
+        /* height: 400px; */
+        background-color: #ffffff;
+        color: #195090;
+      }
+      .card__rank {
+        display: inline-block;
+        font-size: 10px;
+        text-align: center;
+        line-height: 20px;
+        width: 20px;
+        height: 20px;
+        font-weight: 700;
+        border-radius: 100%;
+        background-color: #195090;
+        color: white;
+      }
+      .card__head {
+        color: #195090;
+        font-weight: 700;
+        font-size: 18px;
+        margin: 15px 0 50px 0;
+      }
+
+      .bulletien-info__item {
+        color: #195090;
+        font-size: 12px;
+        line-height: 20px;
+      }
+      .card__ly1 {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+      }
+      .tag-group {
+        width: fit-content;
+        background-color: #195090;
+        height: 22px;
+        font-size: 12px;
+        padding: 0 15px;
+        border-radius: 22px;
+        text-align: center;
+        line-height: 22px;
+        color: white;
+      }
+      .active {
+        background-color: #195090;
+        color: white;
+        transition: 1s;
+      }
+    </style>
+    <!-- main -->
+    <main class="main">
+      <div class="bulletien-group main__card">
+        <h2 class="group-head">주간인기</h2>
+        <div class="card-group">
+          <div class="card">
+            <span class="card__rank">01</span>
+            <h3 class="card__head">제목을 입력합니다.</h3>
+            <div class="card__ly1">
+              <ul class="bulletien-info">
+                <li class="bulletien-info__item">- 작성자: 신현균</li>
+                <li class="bulletien-info__item">- 작성일: 2021.09.25</li>
+                <li class="bulletien-info__item">- 추천수: 190</li>
+              </ul>
+              <div class="tag-group">
+                <span>#태그1</span> <span>#태그2</span> <span>#태그3</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <span class="card__rank">01</span>
+            <h3 class="card__head">제목을 입력합니다.</h3>
+            <div class="card__ly1">
+              <ul class="bulletien-info">
+                <li class="bulletien-info__item">- 작성자: 신현균</li>
+                <li class="bulletien-info__item">- 작성일: 2021.09.25</li>
+                <li class="bulletien-info__item">- 추천수: 190</li>
+              </ul>
+              <div class="tag-group">
+                <span>#태그1</span> <span>#태그2</span> <span>#태그3</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <span class="card__rank">01</span>
+            <h3 class="card__head">제목을 입력합니다.</h3>
+            <div class="card__ly1">
+              <ul class="bulletien-info">
+                <li class="bulletien-info__item">- 작성자: 신현균</li>
+                <li class="bulletien-info__item">- 작성일: 2021.09.25</li>
+                <li class="bulletien-info__item">- 추천수: 190</li>
+              </ul>
+              <div class="tag-group">
+                <span>#태그1</span> <span>#태그2</span> <span>#태그3</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <span class="card__rank">01</span>
+            <h3 class="card__head">제목을 입력합니다.</h3>
+            <div class="card__ly1">
+              <ul class="bulletien-info">
+                <li class="bulletien-info__item">- 작성자: 신현균</li>
+                <li class="bulletien-info__item">- 작성일: 2021.09.25</li>
+                <li class="bulletien-info__item">- 추천수: 190</li>
+              </ul>
+              <div class="tag-group">
+                <span>#태그1</span> <span>#태그2</span> <span>#태그3</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
     <footer class="footer">
@@ -198,5 +358,38 @@
         >2021 © link in one. All rights reserved.</span
       >
     </footer>
+    <!-- <script>
+      {
+        NodeList.prototype.addEventListener = function (event, func) {
+          this.forEach(function (content, item) {
+            content.addEventListener(event, func);
+          });
+        };
+        let cardGroup = document.querySelector(".card-group");
+        let card = document.querySelectorAll(".card");
+        // cardGroup.addEventListener("mouseover", () => {
+        //   console.log(11);
+        // });
+
+        card.addEventListener("mouseover", (e) => {
+          console.log(11);
+          e.target.classList.add("active");
+          console.log(`target: ${e.target.value}`);
+        });
+        card.addEventListener("mouseout", (e) => {
+          console.log(22);
+          e.target.classList.remove("active");
+          e.stopPropagation();
+        });
+
+        // for (i of card) {
+        //   i.addEventListener("mouseover", (e) => {
+        //     console.log(11);
+        //     e.target.classList.add("active");
+        //   });
+        // }
+        console.log(22);
+      }
+    </script> -->
   </body>
 </html>
