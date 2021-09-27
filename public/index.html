@@ -152,7 +152,7 @@
 
       /* main block */
       .main {
-        padding: 100px 0;
+        padding: 0px 0px 100px 0px;
       }
 
       /* card block */
@@ -288,11 +288,29 @@
         color: white;
         transition: 1s;
       }
+      .group-head {
+        display: inline-block;
+        background-size: 10px;
+        width: fit-content;
+        font-size: 30px;
+        color: #195090;
+        margin: 90px 0px 50px 0px;
+      }
+      .group-head::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        transform: translate(-100px, 10px);
+        width: var(--head-width);
+        z-index: -1;
+        height: 10px;
+        border-bottom: 10px solid #7f99e2aa;
+      }
     </style>
     <!-- main -->
     <main class="main">
       <div class="bulletien-group main__card">
-        <h2 class="group-head">주간인기</h2>
+        <h2 class="group-head">주간 인기</h2>
         <div class="card-group">
           <div class="card">
             <span class="card__rank">01</span>
@@ -391,5 +409,24 @@
         console.log(22);
       }
     </script> -->
+    <script>
+      // 페이지 제목 형광펜 효과
+      {
+        let elem = document.querySelector(".group-head");
+        console.log(elem.style.width);
+        let pseudo = window.getComputedStyle(elem, "::before");
+        // pseudo.setProperty("width", "123px");
+        let h_width = window.getComputedStyle(
+          document.querySelector(".group-head")
+        ).width;
+        h_width = Number(h_width.slice(0, h_width.length - 2));
+        console.log(h_width);
+        document.documentElement.style.setProperty(
+          "--head-width",
+          `${h_width + 90}px`
+        );
+        // console.log(elem.getAttribute("display"));
+      }
+    </script>
   </body>
 </html>
