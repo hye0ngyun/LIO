@@ -270,8 +270,8 @@
 
       .bulletien-info__item {
         color: #195090;
-        font-size: 12px;
-        line-height: 20px;
+        /* font-size: 12px; */
+        line-height: 24px;
       }
       .card__ly1 {
         display: flex;
@@ -288,6 +288,11 @@
         text-align: center;
         line-height: 22px;
         color: white;
+        margin-top: 20px;
+      }
+      .tag_18 {
+        padding: 3px 15px;
+        font-size: 18px;
       }
       .active {
         background-color: #195090;
@@ -332,11 +337,15 @@
         height: 0vh;
         visibility: hidden;
         transition: height 1s;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
       }
       .card:hover .card__content {
         visibility: visible;
         height: 200px;
         color: white;
+        line-height: 26px;
       }
       .card-ly1 {
         display: flex;
@@ -345,6 +354,12 @@
         box-shadow: 2px 2px 5px #50505033;
         align-items: flex-end;
         background-image: url(./img/ex1.jpg);
+      }
+      .fs_18 {
+        font-size: 18px;
+      }
+      .fs_28 {
+        font-size: 28px;
       }
     </style>
     <!-- main -->
@@ -423,7 +438,7 @@
         <div class="card-group">
           <div class="card-ly1">
             <a href="#" class="card card_big">
-              <h3 class="card__head">제목을 입력합니다.</h3>
+              <h3 class="card__head fs_28">제목을 입력합니다.</h3>
               <span class="card__date">2021. 09. 24.</span>
               <div class="card__content">
                 <p>
@@ -438,7 +453,29 @@
                 </ul>
               </div>
 
-              <div class="tag-group">
+              <div class="tag-group tag_18">
+                <span>#태그1</span> <span>#태그2</span> <span>#태그3</span>
+              </div>
+            </a>
+          </div>
+          <div class="card-ly1">
+            <a href="#" class="card card_big">
+              <h3 class="card__head fs_28">제목을 입력합니다.</h3>
+              <span class="card__date">2021. 09. 24.</span>
+              <div class="card__content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Nulla, voluptate. Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Magnam, necessitatibus.
+                </p>
+                <ul class="bulletien-info">
+                  <li class="bulletien-info__item">- 작성자: 신현균</li>
+                  <li class="bulletien-info__item">- 작성일: 2021.09.25</li>
+                  <li class="bulletien-info__item">- 추천수: 190</li>
+                </ul>
+              </div>
+
+              <div class="tag-group tag_18">
                 <span>#태그1</span> <span>#태그2</span> <span>#태그3</span>
               </div>
             </a>
