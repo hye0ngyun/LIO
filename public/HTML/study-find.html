@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Link In One</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <style>
+      /* nav block */
+      .nav {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        width: 750px;
+        display: flex;
+        justify-content: space-between;
+      }
+      /* nav element */
+      .nav__item {
+        display: inline-block;
+      }
+      .nav__link {
+        padding: 10px;
+        color: #333333;
+        text-decoration: none;
+        transition: 0.5s;
+      }
+      .nav__link:hover {
+        background-color: #195090;
+        color: white;
+      }
+      /* nav modifier */
+      .nav__link_login {
+        color: #9b9b9b;
+        border: 1px solid white;
+      }
+      .nav__link_login:hover {
+        background-color: white;
+        border: 1px solid #9b9b9b;
+        color: #9b9b9b;
+        border-radius: 15px;
+      }
+      .tab-ly {
+        display: flex;
+        justify-content: center;
+        border-bottom: 0.5px solid #195090;
+      }
+      .tab {
+        display: flex;
+        list-style-type: none;
+      }
+      .tab__item {
+        display: inline-block;
+        margin: 20px 50px;
+      }
+      .tab__link {
+        text-decoration: none;
+        color: #4d4d4d;
+        font-size: 18px;
+      }
+      .tab__link_active {
+        color: #7f99e2;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header -->
+    <script src="../JS/header.js"></script>
+
+    <div class="main">
+      <div class="tab-ly">
+        <ul class="tab">
+          <li class="tab__item">
+            <a href="" class="tab__link tab__link_active">스터디 찾기</a>
+          </li>
+          <li class="tab__item">
+            <a href="" class="tab__link">스터디 모집</a>
+          </li>
+        </ul>
+      </div>
+      <h2 class="group-head underline underline_size-1">스터디 찾기</h2>
+    </div>
+    <!-- footer -->
+    <script src="../JS/footer.js"></script>
+  </body>
+</html>
