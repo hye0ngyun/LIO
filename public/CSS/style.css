@@ -11,13 +11,17 @@ body {
 /* header block */
 .header {
   display: flex;
+  background-color: white;
   /* justify-content: space-around; */
+  position: sticky;
+  top: 0;
   align-items: center;
   box-shadow: 1px 1px 5px #50505033;
   height: 80px;
   padding: 0 100px;
 }
 .header__logo {
+  align-self: center;
   /* width: 100px;
   height: 70px;
   background-color: black; */
@@ -38,7 +42,7 @@ body {
 }
 .nav__link {
   padding: 10px;
-  color: #333333;
+  color: #4d4d4d;
   text-decoration: none;
   transition: 0.5s;
 }
