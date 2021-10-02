@@ -62,10 +62,23 @@
           visibility: hidden;
           transition: max-height 0.3s;
         }
+        .nav__item:not(.nav__item:last-child) {
+          border-bottom: 0.5px solid rgba(70, 70, 70, 0.541);
+        }
         .nav__item:target .nav-sub {
           max-height: 300px;
           visibility: visible;
           /* display: block; */
+        }
+        .nav__item .nav__item-title::before {
+          content: url("../img/keyboard_arrow_right_black_24dp.svg");
+          position: relative;
+          vertical-align: middle;
+          text-align: center;
+          /* top: 5px; */
+        }
+        .nav__item:target .nav__item-title::before {
+          content: url("../img/keyboard_arrow_down_black_24dp.svg");
         }
         #nav-toggle,
         .open-menu-btn,
@@ -146,7 +159,9 @@
     <!-- header -->
     <!-- <script src="../JS/header.js"></script> -->
     <header class="header">
-      <img src="../img/LIO_Link_In_One.svg" alt="" class="header__logo" />
+      <a href="index.html" class="header__logo"
+        ><img src="../img/LIO_Link_In_One.svg" alt="LIO_logo"
+      /></a>
       <input type="checkbox" name="chk" id="nav-toggle" />
       <label for="nav-toggle" class="open-menu-btn">
         <img src="../img/menu_black_24dp.svg" alt="" />
