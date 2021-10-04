@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Link In One</title>
-    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../CSS/reset.css" />
     <link rel="stylesheet" href="../CSS/style.css" />
     <style>
       #nav-toggle,
@@ -58,7 +58,7 @@
         }
         .nav-sub {
           /* display: none; */
-          max-height: 0;
+          max-height: 0vh;
           visibility: hidden;
           transition: max-height 0.3s;
         }
@@ -103,6 +103,8 @@
           box-sizing: border-box;
           background-color: #4d4d4d;
           color: white;
+          width: 100%;
+          text-align: start;
         }
         .nav__item-title {
           display: block;
@@ -111,6 +113,11 @@
           text-decoration: none;
           padding: 10px;
           position: relative;
+          width: auto;
+          text-align: start;
+        }
+        .nav__link {
+          transition: 0s;
         }
         /* 타이틀 데코 */
         /* .nav__item-title::before {

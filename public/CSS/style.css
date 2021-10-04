@@ -8,7 +8,7 @@ body {
   margin: 0;
   max-width: 1920px;
 }
-/* header block */
+/* @@@@@ header block @@@@@ */
 .header {
   display: flex;
   background-color: white;
@@ -44,7 +44,6 @@ body {
   padding: 10px;
   color: #4d4d4d;
   text-decoration: none;
-  transition: 0.5s;
 }
 .nav__link:hover {
   background-color: #195090;
@@ -61,8 +60,218 @@ body {
   color: #9b9b9b;
   border-radius: 15px;
 }
+.nav__item-title {
+  color: #4d4d4d;
+  text-decoration: none;
+  box-sizing: border-box;
+  width: 120px;
+  display: inline-block;
+  text-align: center;
+  padding: 10px 0;
+  transition: 0.3s;
+}
+.nav-sub {
+  max-height: 0vh;
+  visibility: hidden;
+}
+@media (min-width: 1024px) {
+  .nav__item:hover .nav__item-title {
+    background-color: #195090;
+    color: white;
+  }
+  .nav__item:hover .nav-sub {
+    min-height: fit-content;
+    visibility: visible;
+  }
+  .nav__item:hover .nav__link {
+    background-color: #4d4d4d;
+    color: white;
+  }
+  .nav__link {
+    transition: 0.3s;
+  }
+}
+.nav__link {
+  display: inline-block;
+  text-align: center;
+  box-sizing: border-box;
+  color: white;
+  width: 120px;
+  position: relative;
+}
+.nav__link:hover {
+  background-color: #4d4d4d;
+}
+.nav__link::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background: #3498db;
+  left: 0;
+  top: 0;
+  transition: 0.3s;
+  opacity: 0;
+}
+.nav__link:hover:before {
+  opacity: 1;
+}
+#nav-toggle,
+.open-menu-btn,
+.close-menu-btn {
+  display: none;
+  cursor: pointer;
+}
 
-/* banner block */
+/* @@@@@ responsive header @@@@@ */
+@media (max-width: 1023px) {
+  .open-menu-btn {
+    display: block;
+  }
+  .main-preview,
+  .header,
+  .banner {
+    padding: 0 50px;
+  }
+  .header {
+    background-color: white;
+    height: 50px;
+  }
+  .nav {
+    padding: 50px;
+    right: -100%;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #7f99e2;
+    display: flex;
+    justify-content: flex-start;
+    position: fixed;
+    flex-direction: column;
+    transition: 0.5s;
+    box-shadow: -1px -1px 5px #50505033;
+  }
+  .nav__link {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0;
+  }
+  .nav__link_login {
+    border: 0;
+    color: #4d4d4d;
+  }
+  .nav__link_login:hover {
+    border: 0;
+    background-color: #195090;
+    color: white;
+    border-radius: 0;
+  }
+  .nav-sub {
+    /* display: none; */
+    max-height: 0vh;
+    visibility: hidden;
+    transition: max-height 0.3s;
+  }
+  .nav__item:not(.nav__item:last-child) {
+    border-bottom: 0.5px solid rgba(70, 70, 70, 0.541);
+  }
+  .nav__item:target .nav-sub {
+    max-height: 300px;
+    visibility: visible;
+    /* display: block; */
+  }
+  .nav__item .nav__item-title::before {
+    content: url("../img/keyboard_arrow_right_black_24dp.svg");
+    position: relative;
+    vertical-align: middle;
+    text-align: center;
+    /* top: 5px; */
+  }
+  .nav__item:target .nav__item-title::before {
+    content: url("../img/keyboard_arrow_down_black_24dp.svg");
+  }
+  #nav-toggle,
+  .open-menu-btn,
+  .close-menu-btn {
+    z-index: 1;
+  }
+  #nav-toggle,
+  .close-menu-btn {
+    display: none;
+  }
+  #nav-toggle:checked ~ .nav {
+    right: 0;
+  }
+  #nav-toggle:checked ~ .close-menu-btn {
+    display: block;
+  }
+  #nav-toggle:checked ~ .open-menu-btn {
+    display: none;
+  }
+  .nav__link {
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #4d4d4d;
+    color: white;
+    width: 100%;
+    text-align: start;
+  }
+  .nav__item-title {
+    display: block;
+    background-color: #195090;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    position: relative;
+    width: auto;
+    text-align: start;
+  }
+  .nav__link {
+    transition: 0s;
+  }
+  /* 타이틀 데코 */
+  /* .nav__item-title::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 17px;
+    background: #195090;
+    left: 20px;
+    bottom: -7px;
+    transform: rotate(45deg);
+  }
+  .nav__item {
+    overflow: hidden;
+  } */
+  .nav__link {
+    position: relative;
+  }
+  .nav__link:hover {
+    background-color: #4d4d4d;
+  }
+  .nav__link::before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: #3498db;
+    left: 0;
+    top: 0;
+    transition: 0.3s;
+    opacity: 0;
+  }
+  .nav__link:hover:before {
+    opacity: 1;
+  }
+  .nav__item:first-child .nav__item-title {
+    border-radius: 5px 5px 0 0;
+  }
+  .nav__item:last-child .nav__item-title {
+    border-radius: 0 0 5px 5px;
+  }
+}
+
+/* @@@@@ banner block @@@@@ */
 .banner {
   height: 550px;
   padding: 0 100px;
