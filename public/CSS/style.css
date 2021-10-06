@@ -69,6 +69,7 @@ body {
   text-align: center;
   padding: 10px 0;
   transition: 0.3s;
+  cursor: pointer;
 }
 .nav-sub {
   max-height: 0vh;
@@ -528,7 +529,7 @@ body {
   border-radius: 20px;
   box-shadow: 2px 2px 5px #50505033;
   align-items: flex-end;
-  background-image: url(./img/ex1.jpg);
+  background-image: url(../img/ex1.jpg);
 }
 /* @media (max-width: 1023px) {
   .card-group {
@@ -575,4 +576,87 @@ body {
 .tab__link_active {
   color: #7f99e2;
   font-weight: 700;
+}
+
+/* @@@@@ modal block @@@@@ */
+.login-modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4d4d4d44;
+  z-index: 1;
+  display: none;
+}
+.login-modal__content {
+  width: 100%;
+  /* height: 100%; */
+  max-width: 450px;
+  min-height: 350px;
+  background-color: #bdd8fe;
+  background: linear-gradient(315deg, #bdd8fe 0%, #e186b4 74%);
+  border-radius: 50px;
+  padding: 40px;
+  box-shadow: 2px 2px 5px #50505033;
+}
+.modal-content__close {
+  cursor: pointer;
+  float: right;
+  margin-bottom: 40px;
+}
+.modal-content__input {
+  display: block;
+  width: 100%;
+  background: #fffa;
+  border: none;
+  height: 45px;
+  color: #4d4d4d;
+  margin: 10px 0;
+  padding: 0 20px;
+  box-sizing: border-box;
+  border-bottom: 2px solid #fff4;
+  /* border-radius: 20px; */
+  transition: border-bottom 0.3s;
+  font-weight: 700;
+}
+.modal-content__input:focus {
+  outline: none;
+  border-bottom: 2px solid #fff;
+}
+.modal-content__input::placeholder {
+  color: #e186b4;
+  font-weight: 700;
+}
+.modal-content__box {
+  text-decoration: none;
+  color: white;
+  background-color: #7f99e2;
+  box-sizing: border-box;
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  text-align: center;
+  /* vertical-align: middle; */
+  height: 45px;
+  line-height: 45px;
+  border-radius: 30px;
+  font-size: 16px;
+
+  box-shadow: 2px 2px 5px #50505033;
+}
+.modal-content__box_small {
+  width: 45%;
+}
+.modal-content__box_big {
+  width: 100%;
+  background-color: white;
+  color: #195090;
+  margin: 10px 0;
+}
+.modal-content_ly1 {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
 }

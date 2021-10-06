@@ -63,7 +63,7 @@
       <a href="" class="nav__item-title">최근트렌드</a>
     </li>
     <li class="nav__item">
-      <a href="" class="nav__item-title nav__link_login"
+      <a class="nav__item-title nav__link_login"
         >로그인 / 회원가입</a
       >
     </li>
