@@ -1,12 +1,14 @@
 {
   let login_modal = `<form action="" method="POST">
-  <div class="login-modal">
+  <div class="login-modal" id="open-login-modal">
     <div class="login-modal__content modal-content">
-      <img
-        class="modal-content__close"
-        src="../img/close_white_24dp.svg"
-        alt="modal-close"
-      />
+      <a href="#">
+        <img
+          class="modal-content__close"
+          src="../img/close_white_24dp.svg"
+          alt="modal-close"
+        />
+      </a>
       <input
         type="email"
         placeholder="이메일"

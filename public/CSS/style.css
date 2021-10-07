@@ -588,7 +588,14 @@ body {
   align-items: center;
   background-color: #4d4d4d44;
   z-index: 1;
-  display: none;
+  /* display: none; */
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+.login-modal:target {
+  visibility: visible;
+  opacity: 1;
 }
 .login-modal__content {
   width: 100%;
@@ -605,6 +612,11 @@ body {
   cursor: pointer;
   float: right;
   margin-bottom: 40px;
+  opacity: 0.5;
+  transition: opacity 0.5s;
+}
+.modal-content__close:hover {
+  opacity: 1;
 }
 .modal-content__input {
   display: block;
