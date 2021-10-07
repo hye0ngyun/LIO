@@ -1,6 +1,6 @@
 @font-face {
   font-family: noto-sans;
-  src: url(../Noto_Sans_KR/NotoSansKR-Light.otf);
+  src: url(../Noto_Sans_KR/NotoSansKR-Regular.otf);
 }
 body {
   font-family: noto-sans;
@@ -303,6 +303,8 @@ body {
   grid-area: content;
   font-size: 14px;
   margin: 0;
+  color: #333;
+  line-height: 21px;
 }
 .banner-ly2__content__blue {
   color: #195090;
@@ -316,6 +318,7 @@ body {
   letter-spacing: 28px;
   margin: 0;
   font-weight: 500;
+  color: #333;
 }
 .banner-ly2__link {
   grid-area: link;
@@ -429,7 +432,7 @@ body {
 
 .bulletien-info__item {
   color: #195090;
-  /* font-size: 12px; */
+  font-size: 12px;
   line-height: 24px;
 }
 .card__ly1 {
@@ -618,6 +621,16 @@ body {
 .modal-content__close:hover {
   opacity: 1;
 }
+.modal-content__prev {
+  cursor: pointer;
+  float: left;
+  margin-bottom: 40px;
+  opacity: 0.5;
+  transition: opacity 0.5s;
+}
+.modal-content__prev:hover {
+  opacity: 1;
+}
 .modal-content__input {
   display: block;
   width: 100%;
@@ -672,3 +685,13 @@ body {
   justify-content: space-between;
   margin: 30px 0;
 }
+.modal-content__google {
+  background: linear-gradient(to bottom right, #ea4335, #c5221e, #ea4335);
+  color: white;
+}
+.modal-content__naver {
+  background: linear-gradient(to bottom right, #47e762, #04cf5c, #47e762);
+  color: white;
+}
+
+/* @@@@@  @@@@@ */
