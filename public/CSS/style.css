@@ -322,19 +322,30 @@ body {
 }
 .banner-ly2__link {
   grid-area: link;
-  box-sizing: border-box;
+  align-self: flex-end;
+}
+.main-group-head {
+  display: flex;
+  justify-content: space-between;
+}
+.group-head {
+  margin: 90px 0px 50px 0px;
+}
+.more-btn {
+  display: inline-block;
   width: 200px;
   height: 50px;
+  box-sizing: border-box;
   background-color: #195090;
   color: white;
   border: 0;
   border-radius: 50px;
-  font-size: 1.1em;
+  font-size: 18px;
   box-shadow: 0px 2px 3px 0px #30303055;
   cursor: pointer;
   text-align: center;
   line-height: 50px;
-  align-self: flex-end;
+  text-decoration: none;
 }
 
 /* nl modifier */
@@ -459,13 +470,12 @@ body {
   color: white;
   transition: 1s;
 }
-.group-head {
+.group-head-title {
   display: inline-block;
   background-size: 10px;
   width: fit-content;
   font-size: 30px;
   color: #195090;
-  margin: 90px 0px 50px 0px;
 }
 .underline::before {
   content: "";
