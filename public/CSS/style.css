@@ -536,8 +536,8 @@ body {
   overflow: hidden;
   white-space: wrap;
   text-overflow: ellipsis;
-  max-height: 100px;
-  max-width: 400px;
+  /* max-height: 100px;
+  max-width: 400px; */
 }
 .card-ly1 {
   /* max-width: 400px; */
@@ -580,21 +580,23 @@ body {
   }
 } */
 @media (max-width: 1023px) {
+  .main-preview,
+  .header,
+  .banner {
+    padding: 0 50px;
+  }
   .card-item {
     width: 50%;
   }
 }
 @media (max-width: 767px) {
-  .card-item {
-    width: 100%;
-  }
-}
-
-@media (max-width: 1023px) {
   .main-preview,
   .header,
   .banner {
-    padding: 0 50px;
+    padding: 0 1rem;
+  }
+  .card-item {
+    width: 100%;
   }
 }
 
