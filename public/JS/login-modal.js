@@ -53,7 +53,7 @@
           alt="modal-prev"
         />
       </a>
-      <a href="#open-login-modal">
+      <a href="#">
         <img
           class="modal-content__close"
           src="../img/close_white_24dp.svg"

@@ -570,7 +570,7 @@ body {
 }
 .card-item {
   width: 33.33333%;
-  padding: 1rem;
+  padding: 0 1rem;
   margin-bottom: 2rem;
   box-sizing: border-box;
 }
@@ -596,6 +596,7 @@ body {
     padding: 0 1rem;
   }
   .card-item {
+    margin-bottom: 1rem;
     width: 100%;
   }
 }
