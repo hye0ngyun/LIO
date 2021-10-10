@@ -7,71 +7,7 @@
     <title>Link In One</title>
     <link rel="stylesheet" href="../CSS/reset.css" />
     <link rel="stylesheet" href="../CSS/style.css" />
-    <style>
-      .filter-bar {
-        height: 50px;
-        display: flex;
-        align-items: center;
-        background-color: #7f99e2;
-        border-radius: 20px;
-        margin-bottom: 10px;
-        padding: 0 20px;
-      }
-      /* .filter-bar__filter-ico {
-      } */
-      .filter-bar__search-ico {
-        justify-self: flex-end;
-        cursor: pointer;
-      }
-      .vertical-line {
-        display: inline-block;
-        height: 20px;
-        width: 1px;
-        background-color: white;
-        margin: 0 20px;
-      }
-      .filter-bar__search-field {
-        outline: none;
-        background: none;
-        border: none;
-        border-bottom: 1px solid white;
-        opacity: 0.5;
-        transition: opacity 0.5s;
-        max-width: 100px;
-      }
-      .filter-bar__search-field:focus {
-        opacity: 1;
-      }
-      #search-btn {
-        display: none;
-      }
-
-      /* pagenation block */
-      .pagenation {
-        margin: 100px 0 100px 0;
-        display: flex;
-        justify-content: center;
-      }
-      .pagenation__btn {
-        margin: 0 5px;
-        cursor: pointer;
-      }
-      .pagenation-list {
-        margin: 0 10px;
-      }
-      .pagenation-list__item {
-        display: inline-block;
-        padding: 7px;
-        cursor: pointer;
-        /* width: 16px;
-        height: 16px; */
-      }
-      .pagenation-list__item_active {
-        background-color: #195090;
-        border-radius: 30px;
-        color: white;
-      }
-    </style>
+    <style></style>
   </head>
   <body>
     <!-- header -->
@@ -95,6 +31,7 @@
         <h2 class="group-head-title group-head underline underline_size-1">
           스터디 찾기
         </h2>
+        <!-- start filter-bar -->
         <form action="">
           <div class="filter-bar">
             <img
@@ -103,7 +40,12 @@
               class="filter-bar__filter-ico"
             />
             <span class="vertical-line"></span>
-            <select name="" id="">
+            <select name="" id="" class="filter-bar__select">
+              <option value="">aa</option>
+              <option value="">bb</option>
+              <option value="">cc</option>
+            </select>
+            <select name="" id="" class="filter-bar__select">
               <option value="">aa</option>
               <option value="">bb</option>
               <option value="">cc</option>
@@ -124,92 +66,110 @@
             <input type="submit" value="search" id="search-btn" />
           </div>
         </form>
-        <div class="card-group">
-          <div class="card-ly1">
-            <a href="#" class="card card_big">
-              <h3 class="card__head fs_28">제목을 입력합니다.</h3>
-              <span class="card__date">2021. 09. 24.</span>
-              <div class="card__content">
-                <p class="card__p">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nulla, voluptate. Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. Magnam, necessitatibus.
-                </p>
-                <ul class="bulletien-info">
-                  <li class="bulletien-info__item">- 작성자: 신현균</li>
-                  <li class="bulletien-info__item">- 작성일: 2021.09.25</li>
-                  <li class="bulletien-info__item">- 추천수: 190</li>
-                </ul>
-              </div>
-              <div class="tag-group tag_18">
-                <span>#태그1</span> <span>#태그2</span> <span>#태그3</span>
-              </div>
-            </a>
-          </div>
-          <div class="card-ly1">
-            <a href="#" class="card card_big">
-              <h3 class="card__head fs_28">제목을 입력합니다.</h3>
-              <span class="card__date">2021. 09. 24.</span>
-              <div class="card__content">
-                <p class="card__p">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nulla, voluptate. Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. Magnam, necessitatibus.
-                </p>
-                <ul class="bulletien-info">
-                  <li class="bulletien-info__item">- 작성자: 신현균</li>
-                  <li class="bulletien-info__item">- 작성일: 2021.09.25</li>
-                  <li class="bulletien-info__item">- 추천수: 190</li>
-                </ul>
-              </div>
-              <div class="tag-group tag_18">
-                <span>#태그1</span> <span>#태그2</span> <span>#태그3</span>
-              </div>
-            </a>
-          </div>
-          <div class="card-ly1">
-            <a href="#" class="card card_big">
-              <h3 class="card__head fs_28">제목을 입력합니다.</h3>
-              <span class="card__date">2021. 09. 24.</span>
-              <div class="card__content">
-                <p class="card__p">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nulla, voluptate. Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. Magnam, necessitatibus.
-                </p>
-                <ul class="bulletien-info">
-                  <li class="bulletien-info__item">- 작성자: 신현균</li>
-                  <li class="bulletien-info__item">- 작성일: 2021.09.25</li>
-                  <li class="bulletien-info__item">- 추천수: 190</li>
-                </ul>
-              </div>
-              <div class="tag-group tag_18">
-                <span>#태그1</span> <span>#태그2</span> <span>#태그3</span>
-              </div>
-            </a>
-          </div>
-          <div class="card-ly1">
-            <a href="#" class="card card_big">
-              <h3 class="card__head fs_28">제목을 입력합니다.</h3>
-              <span class="card__date">2021. 09. 24.</span>
-              <div class="card__content">
-                <p class="card__p">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nulla, voluptate. Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. Magnam, necessitatibus.
-                </p>
-                <ul class="bulletien-info">
-                  <li class="bulletien-info__item">- 작성자: 신현균</li>
-                  <li class="bulletien-info__item">- 작성일: 2021.09.25</li>
-                  <li class="bulletien-info__item">- 추천수: 190</li>
-                </ul>
-              </div>
-              <div class="tag-group tag_18">
-                <span>#태그1</span> <span>#태그2</span> <span>#태그3</span>
-              </div>
-            </a>
-          </div>
-        </div>
+        <!-- end filter-bar -->
+        <!-- start card-group -->
+        <ul class="card-group">
+          <!-- start card -->
+          <li class="card-item">
+            <div class="card-ly1">
+              <a href="#" class="card card_big">
+                <h3 class="card__head fs_28">제목을 입력합니다.</h3>
+                <span class="card__date">2021. 09. 24.</span>
+                <div class="card__content">
+                  <p class="card__p">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nulla, voluptate. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Magnam, necessitatibus.
+                  </p>
+                  <ul class="bulletien-info">
+                    <li class="bulletien-info__item">- 작성자: 신현균</li>
+                    <li class="bulletien-info__item">- 작성일: 2021.09.25</li>
+                    <li class="bulletien-info__item">- 추천수: 190</li>
+                  </ul>
+                </div>
+                <div class="tag-group tag_18">
+                  <span>#태그1</span> <span>#태그2</span> <span>#태그3</span>
+                </div>
+              </a>
+            </div>
+          </li>
+          <!-- end card -->
+          <!-- start card -->
+          <li class="card-item">
+            <div class="card-ly1">
+              <a href="#" class="card card_big">
+                <h3 class="card__head fs_28">제목을 입력합니다.</h3>
+                <span class="card__date">2021. 09. 24.</span>
+                <div class="card__content">
+                  <p class="card__p">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nulla, voluptate. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Magnam, necessitatibus.
+                  </p>
+                  <ul class="bulletien-info">
+                    <li class="bulletien-info__item">- 작성자: 신현균</li>
+                    <li class="bulletien-info__item">- 작성일: 2021.09.25</li>
+                    <li class="bulletien-info__item">- 추천수: 190</li>
+                  </ul>
+                </div>
+                <div class="tag-group tag_18">
+                  <span>#태그1</span> <span>#태그2</span> <span>#태그3</span>
+                </div>
+              </a>
+            </div>
+          </li>
+          <!-- end card -->
+          <!-- start card -->
+          <li class="card-item">
+            <div class="card-ly1">
+              <a href="#" class="card card_big">
+                <h3 class="card__head fs_28">제목을 입력합니다.</h3>
+                <span class="card__date">2021. 09. 24.</span>
+                <div class="card__content">
+                  <p class="card__p">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nulla, voluptate. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Magnam, necessitatibus.
+                  </p>
+                  <ul class="bulletien-info">
+                    <li class="bulletien-info__item">- 작성자: 신현균</li>
+                    <li class="bulletien-info__item">- 작성일: 2021.09.25</li>
+                    <li class="bulletien-info__item">- 추천수: 190</li>
+                  </ul>
+                </div>
+                <div class="tag-group tag_18">
+                  <span>#태그1</span> <span>#태그2</span> <span>#태그3</span>
+                </div>
+              </a>
+            </div>
+          </li>
+          <!-- end card -->
+          <!-- start card -->
+          <li class="card-item">
+            <div class="card-ly1">
+              <a href="#" class="card card_big">
+                <h3 class="card__head fs_28">제목을 입력합니다.</h3>
+                <span class="card__date">2021. 09. 24.</span>
+                <div class="card__content">
+                  <p class="card__p">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nulla, voluptate. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Magnam, necessitatibus.
+                  </p>
+                  <ul class="bulletien-info">
+                    <li class="bulletien-info__item">- 작성자: 신현균</li>
+                    <li class="bulletien-info__item">- 작성일: 2021.09.25</li>
+                    <li class="bulletien-info__item">- 추천수: 190</li>
+                  </ul>
+                </div>
+                <div class="tag-group tag_18">
+                  <span>#태그1</span> <span>#태그2</span> <span>#태그3</span>
+                </div>
+              </a>
+            </div>
+          </li>
+          <!-- end card -->
+        </ul>
         <!-- end card-group -->
         <!-- start pagenation -->
         <div class="pagenation">
