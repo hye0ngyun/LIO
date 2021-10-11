@@ -7,6 +7,7 @@ body {
   padding: 0;
   margin: 0 auto;
   max-width: 1920px;
+  background: #eee7;
 }
 /* @@@@@ header block @@@@@ */
 .header {
@@ -605,7 +606,7 @@ body {
 .tab-ly {
   display: flex;
   justify-content: center;
-  border-bottom: 0.5px solid #195090;
+  border-bottom: 0.5px solid #19509033;
 }
 .tab {
   display: flex;
@@ -722,7 +723,7 @@ body {
   width: 100%;
   background-color: white;
   color: #195090;
-  margin: 10px 0;
+  margin: 5px 0;
 }
 .modal-content_ly1 {
   display: flex;
