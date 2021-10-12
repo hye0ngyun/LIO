@@ -8,7 +8,30 @@
     <link rel="stylesheet" href="../CSS/reset.css" />
     <link rel="stylesheet" href="../CSS/style.css" />
     <style>
-      
+      /* @@@@@ board card block @@@@@ */
+      .card-item_board-ly {
+        width: 100%;
+        padding: 0 1rem;
+        margin: 0;
+      }
+      .card_board-border {
+        border-radius: 0;
+      }
+      .card_board-border:not(.card-item_board-ly:last-of-type
+          > .card_board-border) {
+        border-bottom: 0.5px solid #19509033;
+      }
+      .card_board-ly {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .bulletien-info_board_ly {
+        width: 150px;
+      }
+      .card__head_board_ly {
+        margin: 7px 0 14px 0;
+      }
     </style>
   </head>
   <body>
@@ -77,7 +100,7 @@
         <!-- end filter-bar -->
         <!-- start board-group -->
         <div class="card-group">
-          <div class="card-item">
+          <div class="card-item card-item_board-ly">
             <a href="#" class="card card_board-ly card_board-border">
               <div class="">
                 <h3 class="card__head card__head_board_ly">
@@ -96,7 +119,7 @@
               </ul>
             </a>
           </div>
-          <div class="card-item">
+          <div class="card-item card-item_board-ly">
             <a href="#" class="card card_board-ly card_board-border">
               <div class="">
                 <h3 class="card__head card__head_board_ly">
@@ -115,7 +138,7 @@
               </ul>
             </a>
           </div>
-          <div class="card-item">
+          <div class="card-item card-item_board-ly">
             <a href="#" class="card card_board-ly card_board-border">
               <div class="">
                 <h3 class="card__head card__head_board_ly">
@@ -134,7 +157,7 @@
               </ul>
             </a>
           </div>
-          <div class="card-item">
+          <div class="card-item card-item_board-ly">
             <a href="#" class="card card_board-ly card_board-border">
               <div class="">
                 <h3 class="card__head card__head_board_ly">

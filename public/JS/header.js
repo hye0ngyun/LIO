@@ -5,14 +5,14 @@
   /></a>
   <input type="checkbox" name="chk" id="nav-toggle" />
   <label for="nav-toggle" class="open-menu-btn">
-    <img src="../img/menu_black_24dp.svg" alt="" />
+    <img src="../img/menu_black_24dp.svg" alt="menu-open-btn" />
   </label>
   <ul class="nav">
     <li class="nav__item">
-      <a href="" class="nav__item-title">서비스소개</a>
+      <a href="../HTML/service-introduction.html" class="nav__item-title">서비스소개</a>
     </li>
-    <li class="nav__item" id="study">
-      <a href="#study" class="nav__item-title">스터디</a>
+    <li class="nav__item" id="team">
+      <a href="#team" class="nav__item-title">팀 찾기</a>
       <ul class="nav-sub">
         <li class="nav-sub__item">
           <a href="../HTML/study-find.html" class="nav__link"
@@ -20,23 +20,8 @@
           >
         </li>
         <li class="nav-sub__item">
-          <a href="../HTML/study-recruit.html" class="nav__link"
-            >스터디 모집</a
-          >
-        </li>
-      </ul>
-    </li>
-    <li class="nav__item" id="project">
-      <a href="#project" class="nav__item-title">프로젝트</a>
-      <ul class="nav-sub">
-        <li class="nav-sub__item">
           <a href="../HTML/project-find.html" class="nav__link"
             >프로젝트 찾기</a
-          >
-        </li>
-        <li class="nav-sub__item">
-          <a href="../HTML/project-recruit.html" class="nav__link"
-            >프로젝트 모집</a
           >
         </li>
       </ul>
@@ -60,7 +45,10 @@
       </ul>
     </li>
     <li class="nav__item">
-      <a href="" class="nav__item-title">최근트렌드</a>
+      <a href="../HTML/recently-trend.html" class="nav__item-title">최근트렌드</a>
+    </li>
+    <li class="nav__item">
+      <a href="../HTML/contact-us.html" class="nav__item-title">문의 사항</a>
     </li>
     <li class="nav__item">
       <a href="#open-login-modal" class="nav__item-title nav__link_login"
@@ -69,7 +57,7 @@
     </li>
   </ul>
   <label for="nav-toggle" class="close-menu-btn">
-    <img src="../img/close_black_24dp.svg" alt="" />
+    <img src="../img/close_black_24dp.svg" alt="menu-close-btn" />
   </label>
 </header>`
 document.write(header);

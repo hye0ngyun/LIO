@@ -815,7 +815,7 @@ body {
 }
 
 /* @@@@@ board card block @@@@@ */
-.card-item {
+.card-item_board-ly {
   width: 100%;
   padding: 0 1rem;
   margin: 0;
@@ -823,7 +823,7 @@ body {
 .card_board-border {
   border-radius: 0;
 }
-.card_board-border:not(.card-item:last-of-type > .card_board-border) {
+.card_board-border:not(.card-item_board-ly:last-of-type > .card_board-border) {
   border-bottom: 0.5px solid #19509033;
 }
 .card_board-ly {
