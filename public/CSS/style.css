@@ -725,10 +725,13 @@ body {
   color: #195090;
   margin: 5px 0;
 }
+.modal-content__first-big-btn {
+  margin-top: 30px;
+}
 .modal-content_ly1 {
   display: flex;
   justify-content: space-between;
-  margin: 30px 0;
+  margin: 30px 0 0 0;
 }
 .modal-content__google {
   background: linear-gradient(to bottom right, #ea4335, #c5221e, #ea4335);
@@ -737,6 +740,33 @@ body {
 .modal-content__naver {
   background: linear-gradient(to bottom right, #47e762, #04cf5c, #47e762);
   color: white;
+}
+/* tech modal block */
+.modal-content__p {
+  /* width: 100%;
+  display: block; */
+  clear: both;
+  color: white;
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+.font-weight_600 {
+  font-weight: 600;
+}
+.modal-content__label {
+  color: white;
+}
+.tag {
+  background-color: #195090;
+  font-size: 14px;
+  border-radius: 15px;
+  padding: 0.1em 1em;
+  color: white;
+}
+.tag__close-btn {
+  width: 14px;
+  margin-left: 0.5em;
+  cursor: pointer;
 }
 
 /* @@@@@  @@@@@ */
