@@ -1009,9 +1009,9 @@ body {
 .recruit-content__label {
   color: #195090;
   /* margin-top: 20px; */
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   display: block;
-  font-size: 24px;
+  font-size: 20px;
 }
 .recruit-content__input {
   background: none;
@@ -1021,6 +1021,10 @@ body {
   margin-bottom: 20px;
   font-size: 16px;
   outline: none;
+  box-sizing: border-box;
+}
+.recruit-content__input::placeholder {
+  color: #4d4d4d77;
 }
 .recruit-content__input_full {
   width: 100%;
@@ -1050,4 +1054,84 @@ body {
   background-color: white;
   color: black;
   border: 1px solid #4d4d4d;
+}
+
+/* @@@@@ content block @@@@@ */
+.content {
+}
+.content__header {
+  font-size: 34px;
+  color: #195090;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.content__info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.content__info-ico {
+  border-radius: 100%;
+  background-color: black;
+}
+.content__info-nickname {
+  margin: 0 15px;
+}
+.content__tag-group {
+  padding-bottom: 15px;
+  border-bottom: 0.5px solid #707070;
+}
+.content__article {
+  padding: 2em;
+}
+.content__article-end {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  align-items: center;
+  color: #a2a2a2;
+  border-bottom: 0.5px solid #707070;
+  padding-bottom: 10px;
+}
+.comments-write {
+  display: flex;
+  flex-direction: column;
+}
+.comments-write__header {
+  color: #195090;
+  font-size: 24px;
+  margin: 30px 0 25px 0;
+}
+.comments-write__textform {
+  width: 100%;
+  resize: none;
+  height: 100px;
+  border: 0.5px solid #707070aa;
+  padding: 1em;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+.comments-write__btn {
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  padding: 0.7em 3em;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #195090;
+  color: white;
+  align-self: flex-end;
+}
+.user-comments__header {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+.user-comments__content {
+  margin: 10px 0;
+}
+.user-comments__reply {
+  color: #195090;
+  border-bottom: 0.5px solid #707070;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
 }
