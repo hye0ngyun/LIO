@@ -167,14 +167,58 @@
           />
         </div>
       </div>
+    </form>
+    <form action="" method="POST">
+      <div
+        class="login-modal"
+        id="modify-pw-modal"
+      >
+        <div class="login-modal__content modal-content">
+          <a href="#">
+            <img
+              class="modal-content__close"
+              src="../img/close_white_24dp.svg"
+              alt="modal-close"
+            />
+          </a>
+          <p class="modal-content__p">
+            <span class="font-weight_600">비밀번호</span>를 <span class="font-weight_600">변경</span>하시겠습니까?
+          </p>
+          <input
+            type="password"
+            placeholder="기존 비밀번호 입력"
+            class="modal-content__input"
+          />
+          <input
+            type="password"
+            placeholder="변경 비밀번호 입력"
+            class="modal-content__input"
+          />
+          <input
+            type="password"
+            placeholder="변경 비밀번호 확인"
+            class="modal-content__input"
+          />
+          <input
+            type="submit"
+            class="
+              modal-content__box
+              modal-content__box_big
+              modal-content__first-big-btn
+            "
+            value="비밀번호 변경"
+          />
+        </div>
+      </div>
     </form>`
-document.write(login_modal);
+  document.write(login_modal);
 }
 {
   let modal_login = document.querySelector("#open-login-modal");
   let modal_find = document.querySelector("#login-modal-find");
   let modal_signup = document.querySelector("#login-modal-signup");
   let modal_tech = document.querySelector('#tech-modal');
+  let modal_modi_pw = document.querySelector('#modify-pw-modal');
   // let modal_close = document.querySelector(".modal-content__close");
   // modal_close.addEventListener("click", () => {
   //   modal.style.visiblity = "0";
@@ -191,6 +235,9 @@ document.write(login_modal);
       window.location.href = "#";
     }
     else if (event.target === modal_tech) {
+      window.location.href = "#";
+    }
+    else if (event.target === modal_modi_pw) {
       window.location.href = "#";
     }
   };

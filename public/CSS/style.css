@@ -762,6 +762,7 @@ body {
   border-radius: 15px;
   padding: 0.1em 1em;
   color: white;
+  width: fit-content;
 }
 .tag__close-btn {
   width: 14px;
@@ -866,4 +867,68 @@ body {
 }
 .card__head_board_ly {
   margin: 7px 0 14px 0;
+}
+
+/* @@@@@ user-info block @@@@@ */
+.user-info__tech {
+  /* margin-top: 30px; */
+}
+/* .user-info__input-ly:not(.user-info__input-ly:first-of-type) {
+  margin-top: 45px;
+} */
+.user-info__input-item {
+  display: block;
+  /* background-color: none; */
+  border: none;
+  border-bottom: 1px solid #195090;
+  width: 100%;
+  padding: 0.5em;
+  margin-top: 5px;
+}
+.user-info-ly {
+  display: flex;
+  margin: 150px 0;
+}
+.user-info__content {
+  width: 50%;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.user-info__img {
+  border-radius: 100%;
+  margin-right: 100px;
+}
+.user-info__label {
+  color: #195090;
+  display: block;
+  margin-bottom: 10px;
+}
+.user-info__nickname {
+  color: #195090;
+  font-size: 24px;
+}
+.user-info__btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.btn-color_sb {
+  background-color: #7f99e2;
+}
+
+@media (max-width: 1023px) {
+  .user-info-ly {
+    flex-wrap: wrap;
+  }
+  .user-info__content {
+    margin-top: 20px;
+  }
+  .content_left {
+    width: fit-content;
+  }
+  .content_right {
+    width: 100%;
+  }
 }
