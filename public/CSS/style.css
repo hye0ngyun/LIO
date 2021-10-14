@@ -496,7 +496,12 @@ body {
 .underline_size-3::before {
   width: 225px;
 }
-
+.underline_size-4::before {
+  width: 370px;
+}
+.underline_size-5::before {
+  width: 310px;
+}
 /* .card_big {
   min-width: 100%;
   max-height: 400px;
@@ -968,6 +973,7 @@ body {
   height: 100%;
   box-sizing: border-box;
   border: none;
+  border-radius: 5px 0 0 5px;
 }
 .message-input__submit {
   width: 100px;
@@ -977,4 +983,71 @@ body {
   color: white;
   border: none;
   cursor: pointer;
+  border-radius: 0 5px 5px 0;
+}
+
+/* @@@@@ recruit block @@@@@ */
+.recruit {
+}
+.recruit__header {
+  background-color: #195090;
+  color: white;
+  height: 100px;
+  border-radius: 20px 20px 0 0;
+  font-size: 28px;
+  padding-left: 40px;
+  line-height: 100px;
+  box-shadow: 1px 1px 5px #50505033;
+}
+
+.recruit-content {
+  padding: 2em;
+  background-color: white;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 1px 1px 5px #50505033;
+}
+.recruit-content__label {
+  color: #195090;
+  /* margin-top: 20px; */
+  margin-bottom: 10px;
+  display: block;
+  font-size: 24px;
+}
+.recruit-content__input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #195090;
+  padding: 0.5em;
+  margin-bottom: 20px;
+  font-size: 16px;
+  outline: none;
+}
+.recruit-content__input_full {
+  width: 100%;
+}
+.ck-editor__editable_inline {
+  min-height: 400px;
+}
+.recruit-content__btn-group {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+.recruit-content__btn {
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  padding: 0.7em 5em;
+  margin-left: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.recruit-content__btn_submit {
+  background-color: #195090;
+  color: white;
+}
+.recruit-content__btn_cancel {
+  background-color: white;
+  color: black;
+  border: 1px solid #4d4d4d;
 }
