@@ -866,6 +866,7 @@ body {
   opacity: 0.5;
   transition: opacity 0.5s;
   max-width: 100px;
+  margin-left: auto;
 }
 .filter-bar__search-field:focus {
   opacity: 1;
@@ -878,6 +879,7 @@ body {
   background: none;
   border: none;
   color: white;
+  background-color: #7f99e2;
 }
 .filter-bar__select:last-of-type {
   margin-right: auto;
@@ -943,6 +945,7 @@ body {
 .user-info__input-item {
   display: block;
   /* background-color: none; */
+  max-width: 300px;
   border: none;
   border-bottom: 1px solid #195090;
   width: 100%;
