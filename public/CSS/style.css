@@ -1132,9 +1132,10 @@ body {
 .content__info-ico {
   border-radius: 100%;
   background-color: black;
+  margin-right: 15px;
 }
 .content__info-nickname {
-  margin: 0 15px;
+  margin: 0 15px 0 0;
 }
 .content__tag-group {
   padding-bottom: 15px;
@@ -1142,6 +1143,7 @@ body {
 }
 .content__article {
   padding: 2em;
+  line-height: 22px;
 }
 .content__article-end {
   display: flex;
@@ -1180,6 +1182,7 @@ body {
   background-color: #195090;
   color: white;
   align-self: flex-end;
+  box-shadow: 1px 1px 5px #50505033;
 }
 .user-comments__header {
   margin-bottom: 5px;
@@ -1187,6 +1190,7 @@ body {
 }
 .user-comments__content {
   margin: 10px 0;
+  line-height: 22px;
 }
 .user-comments__reply {
   color: #195090;
