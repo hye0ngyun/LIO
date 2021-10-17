@@ -5,7 +5,7 @@
       >2021 © link in one. All rights reserved.</span
     >
     <p class="footer__content"
-      >문의: shg7271@gmail.com</p
+      >문의: lio.email.service@gmail.com</p
     >
   </div>
 </footer>`
