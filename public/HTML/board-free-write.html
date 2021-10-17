@@ -92,9 +92,7 @@
       {
         let submit = document.querySelector("#submit");
         let txtarea = document.querySelector("#hidden-txt");
-
         var myEditor;
-
         // #editor위치에 에디터 추가
         ClassicEditor.create(document.querySelector("#editor"))
           .then((editor) => {
@@ -104,10 +102,6 @@
           .catch((err) => {
             console.error(err.stack);
           });
-        // console.log(submit);
-
-        // myEditor.setData("asdasd");
-        // console.log(myEditor.getData());
         // 등록에 마우스 올리면 값전달 준비
         submit.addEventListener("mouseover", (e) => {
           // console.log(myEditor.getData());
