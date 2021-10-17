@@ -47,11 +47,8 @@
     <li class="nav__item">
       <a href="../HTML/recently-trend.html" class="nav__item-title">최근트렌드</a>
     </li>
-    <li class="nav__item">
-      <a href="../HTML/contact-us.html" class="nav__item-title">문의 사항</a>
-    </li>
-    <li class="nav__item">
-    <a href="#team" class="nav__item-title">회원 정보</a>
+    <li class="nav__item" id="user-info">
+    <a href="#user-info" class="nav__item-title">회원 정보</a>
     <ul class="nav-sub">
       <li class="nav-sub__item">
         <a href="../HTML/user-info-modify.html" class="nav__link"

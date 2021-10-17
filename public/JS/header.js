@@ -48,9 +48,6 @@
       <a href="../HTML/recently-trend.html" class="nav__item-title">최근트렌드</a>
     </li>
     <li class="nav__item">
-      <a href="../HTML/contact-us.html" class="nav__item-title">문의 사항</a>
-    </li>
-    <li class="nav__item">
       <a href="#open-login-modal" class="nav__item-title nav__link_login"
         >로그인 / 회원가입</a
       >
