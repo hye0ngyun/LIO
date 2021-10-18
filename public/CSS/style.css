@@ -1229,13 +1229,17 @@ body {
   padding: 0.7em 3em;
   text-decoration: none;
   cursor: pointer;
-  background-color: #195090;
+  background-color: #7f99e2;
   color: white;
   align-self: flex-end;
   box-shadow: 1px 1px 5px #50505033;
+  transition: background-color 0.3s;
+}
+.comments-write__btn:hover {
+  background-color: black;
 }
 .user-comments__header {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   font-size: 18px;
 }
 .user-comments__content {
@@ -1379,6 +1383,12 @@ body {
   .intro-content-middle__container {
     padding: 0 1rem;
   }
+}
+.content__message-btn-ly {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
 }
 
 .label {
