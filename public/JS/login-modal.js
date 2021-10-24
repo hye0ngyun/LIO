@@ -210,6 +210,34 @@
           />
         </div>
       </div>
+    </form>
+    <form action="" method="POST">
+      <div
+        class="login-modal"
+        id="complete-signup"
+      >
+        <div class="login-modal__content modal-content">
+          <a href="#">
+            <img
+              class="modal-content__close"
+              src="../img/close_white_24dp.svg"
+              alt="modal-close"
+            />
+          </a>
+          <p class="modal-content__p">
+            입력하신 이메일로 <span class="font-weight_600">확인 메일</span>을 보내드렸습니다.<br>
+            메일의 <span class="font-weight_600">url을 클릭</span>하여 회원가입을 완료해주세요.
+          </p>
+          <a
+            href="#"
+            type="submit"
+            class="
+              modal-content__box
+              modal-content__box_big
+              modal-content__first-big-btn
+            ">확인</a>
+        </div>
+      </div>
     </form>`
   document.write(login_modal);
 }
@@ -219,6 +247,7 @@
   let modal_signup = document.querySelector("#login-modal-signup");
   let modal_tech = document.querySelector('#tech-modal');
   let modal_modi_pw = document.querySelector('#modify-pw-modal');
+  let modal_complete_signup = document.querySelector('#complete-signup');
   // let modal_close = document.querySelector(".modal-content__close");
   // modal_close.addEventListener("click", () => {
   //   modal.style.visiblity = "0";
@@ -238,6 +267,9 @@
       window.location.href = "#";
     }
     else if (event.target === modal_modi_pw) {
+      window.location.href = "#";
+    }
+    else if (event.target === modal_complete_signup) {
       window.location.href = "#";
     }
   };
