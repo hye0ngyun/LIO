@@ -1408,3 +1408,21 @@ body {
 .label:empty {
   display: none;
 }
+
+.content__tag-group {
+  display: flex;
+  justify-content: space-between;
+}
+.content__btn {
+  display: inline-block;
+  background-color: #7f99e2;
+  font-size: 16px;
+  border-radius: 10px;
+  padding: 0.1em 1em;
+  color: white;
+  width: fit-content;
+  margin: 0 0 5px 5px;
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+}
