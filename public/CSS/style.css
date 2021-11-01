@@ -1150,6 +1150,18 @@ body {
   text-decoration: none;
   cursor: pointer;
 }
+@media (max-width: 1024px) {
+  .recruit-content__btn {
+    font-size: 14px;
+    padding: 0.3em 2.5em;
+  }
+}
+@media (max-width: 768px) {
+  .recruit-content__btn {
+    font-size: 14px;
+    padding: 0.3em 1em;
+  }
+}
 .recruit-content__btn_submit {
   background-color: #195090;
   color: white;
@@ -1440,4 +1452,9 @@ body {
 }
 .user-comments {
   margin-top: 20px;
+}
+.content__article-recommend {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
 }
